@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+}
+footer {
+    position:fixed;bottom:0;left:0;right:0;min-height:30px;
+}
+
+a:link { text-decoration: none; color: black;}
+a:visited { text-decoration: none; color: black;}
+
+
+#typed-cursor {
+	font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+
+	}
+	 
+.slogan {
+	color: #2E3D48;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	margin: -60px 0 0 0;
+	display: block;
+	width: 100%;
+}
+
+#typed-cursor {
+	color: #2E3D48;
+	font-weight: 100;
+}
+
+#typed-cursor.blinking {
+  -webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+    color: black;
+ }
+
+}
+
+@-moz-keyframes blink {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: black;
+ }
+
+}
+
+@-webkit-keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: black;
+ }
+
+}
+
+@-ms-keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: black;
+ }
+
+}
+
+@-o-keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: black;
+ }
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+@media max-width: 400px {
+        body {
+          font-size: 13px;
+          font-weight: bold;
+
+        }
