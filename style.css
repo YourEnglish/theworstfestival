@@ -13,11 +13,7 @@ header {
     float: right;
 	 
 	}
-header a {
-    text-decoration: none;
-	color: black;
-	}
-.bandlinks a {
+.infolink a {
     text-decoration: none;
 	color: black;
 	}
