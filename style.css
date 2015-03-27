@@ -18,6 +18,11 @@ header {
 	color: black;
 	}
 
+.bandlinks a {
+    text-decoration: none;
+	color: black;
+	}
+
 ul {
     margin: 0 0; padding: 0 0;}
 
