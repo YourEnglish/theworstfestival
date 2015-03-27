@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    width: 70%;
 }
 footer {
     position:fixed;bottom:0;left:0;right:0;min-height:30px;
