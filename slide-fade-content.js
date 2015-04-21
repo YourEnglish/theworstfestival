@@ -8,16 +8,32 @@ a);b(this).find(".colorFadeClass").css("background-color",a.fadeColor).show().de
 
 // slide & fade content
 jQuery(document).ready(function($) {
-	$('.more').on('click', function() {
+	$('.more1').on('click', function() {
 		var href = $(this).attr('href');
-		if ($('#ajax').is(':visible')) {
-			$('#ajax').css({ display:'block' }).animate({ height:'0' }).empty();
+		if ($('#ajax1').is(':visible')) {
+			$('#ajax1').css({ display:'block' }).animate({ height:'0' }).empty();
 		}
-		$('#ajax').css({ display:'block' }).animate({ height:'200px' },function() {
-			$('#ajax').html('<img id="loader" src="loader.gif">');
+		$('#ajax1').css({ display:'block' }).animate({ height:'200px' },function() {
+			$('#ajax1').html('<img id="loader" src="loader.gif">');
 			$('#loader').css({ border:'none', position:'relative', top:'24px', left:'48px', boxShadow:'none' }); // http://loadinfo.net/
-			$('#ajax').load('slide-fade-content.html ' + href, function() {
-				$('#ajax').hide().fadeIn('slow');
+			$('#ajax1').load('slide-fade-content1.html ' + href, function() {
+				$('#ajax1').hide().fadeIn('slow');
+			});
+		});
+	});
+});
+// slide & fade content
+jQuery(document).ready(function($) {
+	$('.more2').on('click', function() {
+		var href = $(this).attr('href');
+		if ($('#ajax2').is(':visible')) {
+			$('#ajax2').css({ display:'block' }).animate({ height:'0' }).empty();
+		}
+		$('#ajax2').css({ display:'block' }).animate({ height:'200px' },function() {
+			$('#ajax2').html('<img id="loader" src="loader.gif">');
+			$('#loader').css({ border:'none', position:'relative', top:'24px', left:'48px', boxShadow:'none' }); // http://loadinfo.net/
+			$('#ajax2').load('slide-fade-content2.html ' + href, function() {
+				$('#ajax2').hide().fadeIn('slow');
 			});
 		});
 	});
